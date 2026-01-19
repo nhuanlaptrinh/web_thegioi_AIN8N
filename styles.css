@@ -580,7 +580,7 @@ body {
 
 .about-content {
     display: grid;
-    grid-template-columns: 700px 1fr;
+    grid-template-columns: 450px 1fr;
     gap: 3rem;
     align-items: start;
 }
@@ -593,7 +593,7 @@ body {
 
 .instructor-image {
     width: 100%;
-    max-width: 700px;
+    max-width: 450px;
     height: auto;
     border-radius: 0.75rem;
     object-fit: contain;
@@ -1360,12 +1360,83 @@ body {
 
     /* Căn chỉnh đều hai bên cho text trên mobile */
     .benefit-text,
-    .course-description,
+    .course-description {
+        text-align: justify;
+    }
+
+    /* Cải thiện phần Về Chúng Tôi trên mobile */
+    .about-journey {
+        padding: 2rem 0;
+    }
+
+    .journey-content {
+        padding: 0 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
     .instructor-description,
     .ps-text,
     .instructor-note p,
     .about-list {
+        text-align: justify !important;
+        line-height: 1.85 !important;
+        word-spacing: 0.1em;
+        letter-spacing: 0.01em;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .instructor-description {
+        margin-bottom: 1.25rem;
+        padding: 0;
+        text-indent: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-subtitle {
+        font-size: 1.25rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1.25rem;
+        padding-bottom: 0.75rem;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-list {
+        margin: 1.25rem 0 1.5rem 1.5rem;
+        padding: 0;
+        line-height: 1.9;
+        width: calc(100% - 1.5rem);
+        box-sizing: border-box;
+    }
+
+    .about-list li {
+        margin-bottom: 0.75rem;
         text-align: justify;
+        padding-right: 0.5rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .instructor-note {
+        margin: 2rem 0;
+        padding: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .instructor-note p {
+        margin-bottom: 1rem;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    .instructor-note p:last-child {
+        margin-bottom: 0;
     }
 
     .benefits-grid,
@@ -1599,12 +1670,62 @@ body {
     .hero-description,
     .benefit-text,
     .course-description,
+    /* Cải thiện phần Về Chúng Tôi trên mobile nhỏ */
+    .about-journey {
+        padding: 2rem 0;
+    }
+
+    .journey-content {
+        padding: 0 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     .instructor-description,
     .ps-text,
     .instructor-note p,
     .about-list,
     .contact-item p {
         text-align: justify;
+        line-height: 1.85;
+        word-spacing: 0.1em;
+        letter-spacing: 0.01em;
+    }
+
+    .instructor-description {
+        margin-bottom: 1.25rem;
+        padding: 0;
+    }
+
+    .about-subtitle {
+        font-size: 1.125rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    .about-list {
+        margin: 1.25rem 0 1.5rem 1.25rem;
+        padding: 0;
+        line-height: 1.9;
+    }
+
+    .about-list li {
+        margin-bottom: 0.75rem;
+        text-align: justify;
+        padding-right: 0.5rem;
+    }
+
+    .instructor-note {
+        margin: 1.5rem 0;
+        padding: 1.25rem;
+    }
+
+    .instructor-note p {
+        margin-bottom: 0.875rem;
+        line-height: 1.8;
     }
 
     .footer {
